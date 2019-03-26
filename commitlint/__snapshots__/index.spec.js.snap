@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`commitlint configuration loaded configuration should identify INVALID commit message 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "level": 2,
+      "message": "subject may not be empty",
+      "name": "subject-empty",
+      "valid": false,
+    },
+    Object {
+      "level": 2,
+      "message": "type may not be empty",
+      "name": "type-empty",
+      "valid": false,
+    },
+  ],
+  "input": "missing type",
+  "message": "missing type",
+  "valid": false,
+  "warnings": Array [],
+}
+`;
+
+exports[`commitlint configuration loaded configuration should identify INVALID commit message 2`] = `
+Object {
+  "errors": Array [
+    Object {
+      "level": 2,
+      "message": "type must be one of [feat, fix, docs, style, refactor, perf, test, chore]",
+      "name": "type-enum",
+      "valid": false,
+    },
+  ],
+  "input": "invalid: invalid type",
+  "message": "invalid: invalid type",
+  "valid": false,
+  "warnings": Array [],
+}
+`;
+
+exports[`commitlint configuration loaded configuration should identify INVALID commit message 3`] = `
+Object {
+  "errors": Array [
+    Object {
+      "level": 2,
+      "message": "subject may not be empty",
+      "name": "subject-empty",
+      "valid": false,
+    },
+    Object {
+      "level": 2,
+      "message": "type may not be empty",
+      "name": "type-empty",
+      "valid": false,
+    },
+  ],
+  "input": "feat:not spaced",
+  "message": "feat:not spaced",
+  "valid": false,
+  "warnings": Array [],
+}
+`;
+
+exports[`commitlint configuration loaded configuration should identify INVALID commit message 4`] = `
+Object {
+  "errors": Array [
+    Object {
+      "level": 2,
+      "message": "subject may not be empty",
+      "name": "subject-empty",
+      "valid": false,
+    },
+    Object {
+      "level": 2,
+      "message": "type may not be empty",
+      "name": "type-empty",
+      "valid": false,
+    },
+  ],
+  "input": "feat:",
+  "message": "feat:",
+  "valid": false,
+  "warnings": Array [
+    Object {
+      "level": 1,
+      "message": "header must not be shorter than 10 characters, current length is 5",
+      "name": "header-min-length",
+      "valid": false,
+    },
+  ],
+}
+`;
+
+exports[`commitlint configuration loaded configuration should identify INVALID commit message 5`] = `
+Object {
+  "errors": Array [
+    Object {
+      "level": 2,
+      "message": "header must not be longer than 50 characters, current length is 95",
+      "name": "header-max-length",
+      "valid": false,
+    },
+  ],
+  "input": "feat: some very very very very very very very very very very very very very very very long text",
+  "message": "feat: some very very very very very very very very very very very very very very very long text",
+  "valid": false,
+  "warnings": Array [],
+}
+`;
+
+exports[`commitlint configuration loaded configuration should identify VALID commit message 1`] = `
+Object {
+  "errors": Array [],
+  "input": "feat: some valid text",
+  "message": "feat: some valid text",
+  "valid": true,
+  "warnings": Array [],
+}
+`;
