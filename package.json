@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore '**/*.js'",
-    "lint:ci": "eslint --format junit --output-file ./reports/eslint.junit.xml --ignore-path .gitignore '**/*.js'",
+    "lint:ci": "eslint --format junit --output-file ./reports/eslint/results.xml --ignore-path .gitignore '**/*.js'",
     "test": "jest",
     "semantic-release": "semantic-release"
   },
@@ -41,10 +41,6 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "jest-junit": {
-    "suiteName": "jest tests",
-    "output": "./reports/junit.xml"
   },
   "peerDependencies": {
     "semantic-release": "^15.1.5"

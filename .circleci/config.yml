@@ -20,6 +20,7 @@ jobs:
       - run:
           name: install dependencies
           command: 'npm ci'
+          when: always
       - save_cache:
           key: v1-npm-cache-{{ checksum "package-lock.json" }}
           paths:
@@ -36,11 +37,12 @@ jobs:
       - codecov/upload:
           file: ./reports/coverage/lcov.info
       - store_test_results:
-          path: reports
+          path: ./reports
       - store_artifacts:
-          path: ./reports/jest.junit.xml
+          path: ./reports/jest/results.xml
+          destination: jest
       - store_artifacts:
-          path: ./reports/eslint.junit.xml
+          path: ./reports/eslint/results.xml
+          destination: eslint
       - store_artifacts:
-          path: ./reports/coverage/lcov.info
-          prefix: tests
+          path: ./coverage/lcov.info
