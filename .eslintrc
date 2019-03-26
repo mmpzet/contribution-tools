@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "canonical",
+    "canonical/jest"
+  ],
+  "root": true,
+  "rules": {
+    "import/no-commonjs": "off",
+    "import/unambiguous": "off",
+    "promise/prefer-await-to-then": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "sort-keys": "off",
+    "sort-vars": "off",
+    "no-restricted-syntax": "off",
+    "filenames/match-regex": ["error", "^[A-Za-z]+\\d*(\\.[a-z]+)*$", false],
+    "promise/prefer-await-to-callbacks": "off"
+  }
+}
