@@ -1,0 +1,78 @@
+{
+  "name": "@mmpzet/contribution-tools",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore '**/*.js'",
+    "lint:ci": "eslint --format junit --output-file ./reports/eslint.junit.xml --ignore-path .gitignore '**/*.js'",
+    "test": "jest",
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "extends": "./semantic-release"
+  },
+  "homepage": "https://github.com/mmpzet/contribution-tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmpzet/contribution-tools.git"
+  },
+  "author": "Marco Massarotto <massa84@gmail.com>",
+  "license": "Apache-2.0",
+  "config": {
+    "commitizen": {
+      "path": "./commitizen"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "./commitlint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HSUKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./reports/junit.xml"
+  },
+  "peerDependencies": {
+    "semantic-release": "^15.1.5"
+  },
+  "devDependencies": {
+    "@commitlint/lint": "^7.5.2",
+    "@commitlint/load": "^7.5.0",
+    "commitlint": "^7.5.2",
+    "eslint": "^5.15.3",
+    "eslint-config-canonical": "^10.3.0",
+    "husky": "^1.0.0",
+    "jest": "^24.5.0",
+    "jest-junit": "^6.3.0",
+    "jest-snapshot-serializer-function-name": "^1.1.0",
+    "lint-staged": "^8.1.5",
+    "semantic-release": "^15.1.5"
+  },
+  "dependencies": {
+    "@semantic-release/exec": "^3.3.2",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.4",
+    "app-root-path": "^2.0.1",
+    "chalk": "^2.3.2",
+    "compare-func": "^1.3.2",
+    "inquirer": "^6.2.2",
+    "rxjs": "^6.4.0",
+    "sync-request": "^6.0.0",
+    "word-wrap": "^1.2.3"
+  }
+}
