@@ -1,4 +1,4 @@
-# contribution-tools <img src="https://pages.github.com/mmpzet/contribution-tools/logo.svg" align="right" width=128 />
+# contribution-tools <img src="https://mmpzet.github.io/contribution-tools/logo.svg" align="right" width=128 />
 > Collection of tools and configurations used for development and release of @mmpzet projects
 
 ## Installation
