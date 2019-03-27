@@ -1,6 +1,4 @@
 version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.4
 jobs:
   build:
     environment:
@@ -34,8 +32,10 @@ jobs:
           name: test
           command: 'npm run test'
           when: always
-      - codecov/upload:
-          file: ./coverage/lcov.info
+      - run:
+          name: codecov upload
+          command: bash <(curl -s https://codecov.io/bash) -f ./coverage/lcov.info
+          when: always
       - store_test_results:
           path: ./reports
       - store_artifacts:
