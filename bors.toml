@@ -1,0 +1,6 @@
+status = ['workflow']
+pr-status = ['license/cla', 'workflow', 'security/snyk - package.json (mmpzet)']
+delete-merged-branches = true
+[committer]
+name = "mmpzet-bot"
+email = "massa84+mmpzet-bot@gmail.com"
