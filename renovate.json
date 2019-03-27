@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":semanticCommitScopeDisabled"
+  ],
+  "automerge": true,
+  "automergeType": "pr-comment",
+  "automergeComment": "bors: r+"
+}
