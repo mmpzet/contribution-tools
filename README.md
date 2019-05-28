@@ -137,3 +137,5 @@ and add the following to your package.json
   ]
 }
 ```
+
+Thanks!
