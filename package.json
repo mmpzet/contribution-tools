@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@semantic-release/exec": "^3.3.2",
-    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/git": "^7.0.10",
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/npm": "^5.1.5",
     "app-root-path": "^2.0.1",
