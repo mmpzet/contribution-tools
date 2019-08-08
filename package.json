@@ -51,7 +51,7 @@
     "commitlint": "8.1.0",
     "eslint": "5.16.0",
     "eslint-config-canonical": "10.3.2",
-    "husky": "3.0.1",
+    "husky": "3.0.3",
     "jest": "24.8.0",
     "jest-junit": "7.0.0",
     "jest-snapshot-serializer-function-name": "1.1.0",
