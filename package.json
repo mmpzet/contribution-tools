@@ -55,7 +55,7 @@
     "jest": "24.9.0",
     "jest-junit": "7.0.0",
     "jest-snapshot-serializer-function-name": "1.1.0",
-    "lint-staged": "9.2.2",
+    "lint-staged": "9.2.3",
     "semantic-release": "15.13.21"
   },
   "dependencies": {
