@@ -43,7 +43,7 @@
     ]
   },
   "peerDependencies": {
-    "semantic-release": "^15.1.5"
+    "semantic-release": "^15.1.5 || ^16.0.0"
   },
   "devDependencies": {
     "@commitlint/lint": "8.3.4",
@@ -56,7 +56,7 @@
     "jest-junit": "10.0.0",
     "jest-snapshot-serializer-function-name": "1.1.0",
     "lint-staged": "9.5.0",
-    "semantic-release": "15.14.0"
+    "semantic-release": "16.0.0"
   },
   "dependencies": {
     "@semantic-release/exec": "^4.0.0",
