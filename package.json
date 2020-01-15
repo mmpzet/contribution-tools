@@ -46,9 +46,9 @@
     "semantic-release": "^15.1.5 || ^16.0.0"
   },
   "devDependencies": {
-    "@commitlint/lint": "8.3.4",
-    "@commitlint/load": "8.3.4",
-    "commitlint": "8.3.4",
+    "@commitlint/lint": "8.3.5",
+    "@commitlint/load": "8.3.5",
+    "commitlint": "8.3.5",
     "eslint": "5.16.0",
     "eslint-config-canonical": "10.3.2",
     "husky": "4.0.10",
