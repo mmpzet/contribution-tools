@@ -43,7 +43,7 @@
     ]
   },
   "peerDependencies": {
-    "semantic-release": "^15.1.5 || ^16.0.0"
+    "semantic-release": "^15.1.5 || ^16.0.0 || ^17.0.0"
   },
   "devDependencies": {
     "@commitlint/lint": "8.3.5",
@@ -56,11 +56,11 @@
     "jest-junit": "10.0.0",
     "jest-snapshot-serializer-function-name": "1.1.0",
     "lint-staged": "10.0.3",
-    "semantic-release": "16.0.3"
+    "semantic-release": "17.0.0"
   },
   "dependencies": {
-    "@semantic-release/exec": "^4.0.0",
-    "@semantic-release/git": "^8.0.0",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^6.0.0",
     "@semantic-release/npm": "^6.0.0",
     "app-root-path": "^3.0.0",
