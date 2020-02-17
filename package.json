@@ -7,7 +7,9 @@
     "lint": "eslint --ignore-path .gitignore '**/*.js'",
     "lint:ci": "eslint --format junit --output-file ./reports/eslint/results.xml --ignore-path .gitignore '**/*.js'",
     "test": "jest",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "release": {
     "extends": "./semantic-release"
@@ -69,6 +71,8 @@
     "inquirer": "^7.0.0",
     "rxjs": "^6.4.0",
     "sync-request": "^6.0.0",
-    "word-wrap": "^1.2.3"
-  }
+    "word-wrap": "^1.2.3",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
