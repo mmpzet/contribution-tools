@@ -50,7 +50,7 @@
     "@commitlint/load": "8.3.5",
     "commitlint": "8.3.5",
     "eslint": "5.16.0",
-    "eslint-config-canonical": "10.3.2",
+    "eslint-config-canonical": "25.8.16",
     "husky": "4.2.3",
     "jest": "25.1.0",
     "jest-junit": "10.0.0",
